@@ -9,4 +9,9 @@ scrape_configs:
   scrape_interval: 5s
   static_configs:
   - targets:
-    - localhost:8080
+    - 150.100.100.54:8080
+- job_name: dolefrontend
+  scrape_interval: 5s
+  static_configs:
+  - targets:
+    - 150.100.100.54:80
